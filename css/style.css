@@ -42,7 +42,25 @@
 }
 
 .hayao-works__table {
-    border: 1px solid rgb(72, 78, 81);;
+    border: 1px solid rgb(72, 78, 81);
+    border-collapse: collapse;
+    border-radius: 3px;
+    /* background-color: #fff; */
+    text-align: center;
+}
+
+.hayao-works-table__head {
+    color: #fff;
+    background-color: #666;
+}
+
+.hayao-works-table__cell {
+    padding: 5px;
+    border: 1px solid  rgb(72, 78, 81);
+}
+
+.hayao-works-table__cell--yes {
+    background-color: #f08076;
 }
 
 .text {
