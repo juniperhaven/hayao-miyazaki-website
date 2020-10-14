@@ -7,6 +7,12 @@
     <title>Hayao Miyazaki</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <style>
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
         body {
             background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
             font-family: Arial, Helvetica, sans-serif;
@@ -292,7 +298,7 @@
                         <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
                         <td class="hayao-works-table__cell"></td>
                         <td class="hayao-works-table__cell"></td>
-                        <td class="hayao-works-table__cell">In production </td>
+                        <td style="width: 100px;" class="hayao-works-table__cell">In production </td>
                     </tr>
                 </tbody>
             </table>
