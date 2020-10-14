@@ -7,6 +7,12 @@
     <title>Hayao Miyazaki</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <style>
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
         body {
             /*  -----------------------------------
                     We can take and test different gradients from here:
@@ -148,160 +154,163 @@
                 film planned that is going to be written and directed by Miyazaki. In creating Studio Ghibli, Miyazaki
                 helped introduce a number of wonderful new animated movies to the world.</p>
 
-            <table class="hayao-works__table">
-                <tr>
-                    <th>Year</th>
-                    <th>Title</th>
-                    <th>Director</th>
-                    <th>Writer</th>
-                    <th>Producer</th>
-                    <th>Other roles</th>
-                    <th>Notes</th>
-                </tr>
-                <tr>
-                    <td>1979</td>
-                    <td>The Castle of Cagliostro</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1984</td>
-                    <td>Nausicaä of the Valley of the Wind</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1986</td>
-                    <td>Castle in the Sky</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1988</td>
-                    <td>My Neighbor Totoro</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1989</td>
-                    <td>Kiki's Delivery Service</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1992</td>
-                    <td>Porco Rosso</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1995</td>
-                    <td>Whisper of the Heart</td>
-                    <td></td>
-                    <td>Yes</td>
-                    <td>General producer</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>On Your Mark</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Music video</td>
-                </tr>
-                <tr>
-                    <td>1997</td>
-                    <td>Princess Mononoke</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2001</td>
-                    <td>Spirited Away</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2004</td>
-                    <td>Howl's Moving Castle</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2008</td>
-                    <td>Ponyo</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2010</td>
-                    <td>Arrietty</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td>Planning</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2011</td>
-                    <td>From Up on Poppy Hill</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td>Planning</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2013</td>
-                    <td>The Wind Rises 	Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>TBA</td>
-                    <td>How Do You Live?</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td></td>
-                    <td></td>
-                    <td>In production </td>
-                </tr>
+            <table class="hayao-works__table hayao-works-table">
+                <thead class="hayao-works-table__head">
+                    <tr>
+                        <th class="hayao-works-table__cell">Year</th>
+                        <th class="hayao-works-table__cell">Title</th>
+                        <th class="hayao-works-table__cell">Director</th>
+                        <th class="hayao-works-table__cell">Writer</th>
+                        <th class="hayao-works-table__cell">Producer</th>
+                        <th class="hayao-works-table__cell">Other roles</th>
+                        <th class="hayao-works-table__cell">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hayao-works-table__cell">1979</td>
+                        <td class="hayao-works-table__cell">The Castle of Cagliostro</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">1984</td>
+                        <td class="hayao-works-table__cell">Nausicaä of the Valley of the Wind</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">1986</td>
+                        <td class="hayao-works-table__cell">Castle in the Sky</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">1988</td>
+                        <td class="hayao-works-table__cell">My Neighbor Totoro</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">1989</td>
+                        <td class="hayao-works-table__cell">Kiki's Delivery Service</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">1992</td>
+                        <td class="hayao-works-table__cell">Porco Rosso</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell" rowspan="2">1995</td>
+                        <td class="hayao-works-table__cell">Whisper of the Heart</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td style="width: 130px;" class="hayao-works-table__cell">General producer</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">On Your Mark</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell">Music video</td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">1997</td>
+                        <td class="hayao-works-table__cell">Princess Mononoke</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">2001</td>
+                        <td class="hayao-works-table__cell">Spirited Away</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">2004</td>
+                        <td class="hayao-works-table__cell">Howl's Moving Castle</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">2008</td>
+                        <td class="hayao-works-table__cell">Ponyo</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">2010</td>
+                        <td class="hayao-works-table__cell">Arrietty</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell">Planning</td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">2011</td>
+                        <td class="hayao-works-table__cell">From Up on Poppy Hill</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell">Planning</td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">2013</td>
+                        <td class="hayao-works-table__cell">The Wind Rises hayao-works-table__cell--yes 	Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="hayao-works-table__cell">TBA</td>
+                        <td class="hayao-works-table__cell">How Do You Live?</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell hayao-works-table__cell--yes">Yes</td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td class="hayao-works-table__cell"></td>
+                        <td style="width: 100px;" class="hayao-works-table__cell">In production </td>
+                    </tr>
+                </tbody>
             </table>
 
             <div class="text">To learn more about Hayao Miyazaki's works, <a class="text"
