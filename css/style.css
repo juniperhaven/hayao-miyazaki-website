@@ -68,3 +68,24 @@
     line-height: 150%;
     font-size: 18px;
 }
+
+.jumplink:link {
+    color: goldenrod;
+    background-color: transparent;
+}
+
+.jumplink:visited {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+.jumplink:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.jumplink:active {
+    color: dimgray;
+    background-color: transparent;
+    text-decoration: underline;
+}
