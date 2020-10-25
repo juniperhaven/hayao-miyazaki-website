@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.nav__header {
+    font-size: 32px;
+}
+
 .hayao {
     display: flex;
 }
