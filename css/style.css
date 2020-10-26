@@ -86,12 +86,12 @@
 }
 
 .jumplink:visited {
-    color: blueviolet;
+    color: rgb(138, 43, 226);
     background-color: transparent;
 }
 
 .jumplink:hover {
-    color: black;
+    color: rgb(78, 15, 136);
     background-color: transparent;
 }
 
